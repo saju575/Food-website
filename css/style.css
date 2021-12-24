@@ -37,7 +37,7 @@ body{
     --text-blue:#192A56;
     --white:#ffffff;
     --grey:#EEEEEE;
-    --box-shadow:0px 0px 2px 2px rgba(255,255,255,.8);
+    --box-shadow:0 0 15px rgba(0,0,0,.25);;
 }
 ul{
     margin: 0;
@@ -62,7 +62,7 @@ ul li{
     
 }
 .sec-padding{
-    padding: 70px 0;
+    padding: 6.5rem 0;
 }
 h1{
     color: var(--text-blue);
@@ -78,6 +78,34 @@ h4{
     font-size: 1.6rem;
     text-transform: capitalize;
     font-weight: 300;
+}
+h3{
+    color: var(--text-blue);
+    font-size: 1.8rem;
+}
+
+/* section-title */
+.section-title{
+    
+    width: 100%;
+    padding: 0 1.5rem;
+    
+    margin-bottom: 6rem;
+}
+.section-title h2{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--text-blue);
+}
+.section-title h2::before{
+    content: attr(data-title);
+    display: block;
+    font-size: 1.4rem;
+    color: var(--text-green);
+    font-family: var(--cursive-font);
+    font-weight: 400;
+    text-transform: capitalize;
 }
 
 .owl-carousel .owl-dots{
@@ -97,6 +125,7 @@ h4{
     background-color: var(--text-green);
 }
 
+
 /* ---------
 nav-section start
 ----------- */
@@ -107,6 +136,8 @@ nav-section start
     align-items: center;
     padding: 1rem 7%;
     margin: auto;
+    width: 88%;
+    max-width: 144.7rem;
 
 }
 .nav-section a{
@@ -182,4 +213,78 @@ header-section start
 .header-img img{
     width: 95%;
     margin: auto;
+}
+
+/* -------------
+dishes section start
+------------- */
+.dishes-section{
+    background-color: var(--grey);
+}
+.dishes-item{
+    text-align: center; 
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+.dishes-item img{
+    margin: 1rem 0;
+}
+.dishes-item h3{
+    margin-bottom: .8rem;
+}
+.dishes-item .rating{
+    margin-bottom: 1rem;
+}
+.dishes-item .rating i{
+    color: var(--text-green);
+    font-size: 1.2rem;
+}
+.dishes-item span{
+    color: var(--text-green);
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    display: block;
+    
+}
+.dishes-item .fa-heart,
+.dishes-item .fa-eye{
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    top: 1.5rem;
+    background-color: var(--grey);
+    color: var(--text-blue);
+    cursor: pointer;
+    opacity: 0;
+    transition: all .5s ease;
+}
+.dishes-item .fa-heart:hover,
+.dishes-item .fa-eye:hover{
+    color: var(--white);
+    background-color: var(--text-green);
+    transform: rotate(360deg);
+}
+.dishes-item .fa-eye{
+    left: -1rem;
+    
+}
+.dishes-item .fa-heart{
+    right: -1rem;
+    
+}
+
+
+.dishes-item:hover .fa-heart{
+    opacity: 1;
+    right: 1.5rem;
+    
+}
+.dishes-item:hover .fa-eye{
+    opacity: 1;
+    left: 1.5rem;
+    
 }
