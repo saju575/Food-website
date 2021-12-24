@@ -39,6 +39,14 @@ body{
     --grey:#EEEEEE;
     --box-shadow:0 0 15px rgba(0,0,0,.25);;
 }
+@keyframes spin_01{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
 ul{
     margin: 0;
     padding: 0;
@@ -134,11 +142,21 @@ nav-section start
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 7%;
-    margin: auto;
+    padding: 1rem 1%;
+    z-index: 111;
+     
+    /* margin: auto;
     width: 88%;
-    max-width: 144.7rem;
+    max-width: 144.7rem; */ 
 
+}
+.na{
+    z-index: 11111;
+}
+.na.navbar-shrink{
+    box-shadow: 0 10px 10px rgba(0,0,0,.1);
+    background-color: var(--white);
+    padding-top: 5px;
 }
 .nav-section a{
     font-size: 1.1rem;
@@ -166,6 +184,10 @@ nav-section start
     color: var(--white);
     transform: rotate(360deg);
 
+}
+
+.search i#menu-bars{
+    display: none;
 }
 
 .nav-section .logo{
@@ -197,9 +219,7 @@ nav-section start
 .nav-bar ul li:hover a{
     color: white;
 }
-.nav-bar ul li:last-child{
-    margin-right: 0;
-}
+
 
 /* --------
 header-section start
@@ -286,5 +306,110 @@ dishes section start
 .dishes-item:hover .fa-eye{
     opacity: 1;
     left: 1.5rem;
+    
+}
+
+/* -- -------
+Choose section start 
+-- */
+.choose-section .choose-pic-sec img{
+    width: 98%;
+    margin: auto;
+    height: auto;
+    animation: spin_01 8s linear infinite;
+
+}
+.choose-text-sec h2{
+    color: var(--text-blue);
+    font-size: 2.5rem;
+}
+.choose-text-sec p{
+    color:#666666;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+.icon-container{
+    display: flex;
+    gap: 1rem;
+}
+.icon-container .about-btn{
+    display: flex;
+    background-color: var(--grey);
+    gap: .5rem;
+    padding: 1rem;
+    box-sizing: var(--box-shadow);
+    border-radius: 5%;
+}
+.icon-container .about-btn i{
+    font-size: 1.4rem;
+    color: var(--text-green);
+}
+.icon-container .about-btn span{
+    color: var(--text-blue);
+    font-weight: 300;
+    font-size: .8rem;
+}
+.choose-text-sec .btn-implement{
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------media quary------ */
+@media(max-width:992px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:768px){
+    .search i#menu-bars{
+        display: inline-block;
+    }
+    .nav-section{
+        position: relative;
+    }
+    .nav-section .nav-bar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding: 1rem;
+        
+        display: none;
+
+    }
+    
+    .nav-bar ul li{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        
+        background: #eee;
+    }
+    .nav-bar ul li a{
+        font-size: 2rem;
+    }
+    
     
 }

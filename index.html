@@ -12,41 +12,44 @@
     <!-- -------link bootstrap css--------- -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
      <!-- Link Swiper's CSS -->
-     <link
-     rel="stylesheet"
-     href="https://unpkg.com/swiper/swiper-bundle.min.css"
-   />
+     
     <!-- ---------link local css---------- -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="na fixed-top">
     <!-- nav-section start -->
-    <div class="nav-section">
+    <div class="container">
+        <div class="row nav-section">
+            <a href="#" class="logo"><i class="fas fa-utensils"></i>Resto.</a>
+            <nav class="nav-bar">
+                <ul>
+                    <li class="active"><a href="#">home</a></li>
+                    <li><a href="#" data-scroll-nav="0">dishes</a></li>
+                    <li><a href="#" data-scroll-nav="1">about</a></li>
+                    <li><a href="#" data-scroll-nav="2">menu</a></li>
+                    <li><a href="#" data-scroll-nav="3">review</a></li>
+                    <li><a href="#" data-scroll-nav="4">order</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <i class="fas fa-bars" id="menu-bars"></i>
+                <i class="fas fa-search"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </div>
         
             
 
-        <a href="#" class="logo"><i class="fas fa-utensils"></i>Resto.</a>
-        <nav class="nav-bar">
-            <ul>
-                <li class="active"><a href="#">home</a></li>
-                <li><a href="#">dishes</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">menu</a></li>
-                <li><a href="#">review</a></li>
-                <li><a href="#">order</a></li>
-            </ul>
-        </nav>
-        <div class="search">
-            <i class="fas fa-search"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-shopping-cart"></i>
-        </div>
+       
     
     </div>
+</div>
     <!-- nav-section end -->
 
     <!-- --header section start------- -->
-    <header class="header-section sec-padding">
+    <header class="header-section sec-padding" data-scroll-index="0">
         <div class="container">
             <div class="row col-lg-12">
                 <div class="owl-carousel features-carousel">
@@ -94,7 +97,7 @@
     <!-- header section end -->
 
     <!-- -------dishes section start----------  -->
-    <section class="dishes-section sec-padding">
+    <section class="dishes-section sec-padding" data-scroll-index="1">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="section-title">
@@ -215,6 +218,44 @@
         </div>
     </section>
     <!-- -------dishes section end----------  -->
+
+    <!-- -------Choose section start -->
+    <section class="choose-section sec-padding" data-scroll-index="2">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="section-title">
+                    <h2 data-title="about us">why choose us?</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 choose-pic-sec">
+                    <img src="images/about-img.png" alt="about us">
+                </div>
+                <div class="col-md-6 choose-text-sec">
+                    <h2>best food in the country</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe praesentium totam deleniti tempore, veritatis consequatur nemo suscipit dignissimos aut quas.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, fuga!</p>
+                    <div class="icon-container">
+                        <div class="about-btn">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>Free Delivery</span>
+                        </div>
+                        <div class="about-btn">
+                            <i class="fas fa-dollar-sign"></i>
+                            <span>Easy Payments</span>
+                        </div>
+                        <div class="about-btn">
+                            <i class="fas fa-headset"></i>
+                            <span>24/7 Service</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="btn btn-implement">learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -------Choose section end -->
 
 
     <!-- ------link jequery----- -->
