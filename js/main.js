@@ -1,12 +1,12 @@
  $(document).ready(function () {
 
-     // ------------nav bar shrink---------
-     $(window).on("scroll",function(){
+      // ------------nav bar shrink---------
+    $(window).on("scroll",function(){
         if($(this).scrollTop()>80){
-            $(".na").addClass("navbar-shrink");
+            $("header").addClass("navbar-shrink");
         }
         else{
-            $(".na").removeClass("navbar-shrink");
+            $("header").removeClass("navbar-shrink");
         }
     })
 
@@ -39,10 +39,10 @@
 
  });
 
-// const menu=document.querySelector("#menu-bars");
-// const navbar=document.querySelector('.navbar');
-
-// menu.onclick=() =>{
-//     menu.classList.toggle('fa-times');
-//     navbar.classList.toggle('act');
-// }
+ function openNav(){
+    document.getElementById('mynav').style.width='100%';
+    
+}
+function closeNav(){
+    document.getElementById('mynav').style.width='0%';
+}

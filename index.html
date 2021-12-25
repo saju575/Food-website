@@ -17,35 +17,44 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="na fixed-top">
-    <!-- nav-section start -->
-    <div class="container">
-        <div class="row nav-section">
-            <a href="#" class="logo"><i class="fas fa-utensils"></i>Resto.</a>
-            <nav class="nav-bar">
-                <ul>
-                    <li class="active"><a href="#">home</a></li>
-                    <li><a href="#" data-scroll-nav="0">dishes</a></li>
-                    <li><a href="#" data-scroll-nav="1">about</a></li>
-                    <li><a href="#" data-scroll-nav="2">menu</a></li>
-                    <li><a href="#" data-scroll-nav="3">review</a></li>
-                    <li><a href="#" data-scroll-nav="4">order</a></li>
-                </ul>
-            </nav>
-            <div class="search">
-                <i class="fas fa-bars" id="menu-bars"></i>
-                <i class="fas fa-search"></i>
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-shopping-cart"></i>
+    <header>
+        <div class="nav-class">
+        <a href="#" class="logo"><i class="fas fa-utensils"></i>Resto.</a>
+        <nav class="nav-bar">
+            
+                <a class=".nav-item active" href="#">home</a>
+                <a href="#" class=".nav-item" data-scroll-nav="0">dishes</a>
+                <a class=".nav-item" href="#" data-scroll-nav="1">about</a>
+                <a class=".nav-item" href="#" data-scroll-nav="2">menu</a>
+                <a class=".nav-item" href="#" data-scroll-nav="3">review</a>
+                <a class=".nav-item" href="#" data-scroll-nav="4">order</a>
+            </ul>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" onclick="openNav()" id="menu-bars"></i>
+            <i class="fas fa-search"></i>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            
+        </div>
+        </div>
+        <div class="mobile-menu">
+            
+            <div id="mynav" class="overlay">
+                <a class='close-btn' onclick='closeNav()' href="javascript:void(0)">&times;</a>
+                <div class="overlay-content">
+                    <a onclick='closeNav()' href="#">home</a>
+                    <a onclick='closeNav()' href="#">dishes</a>
+                    <a onclick='closeNav()' href="#">about</a>
+                    <a onclick='closeNav()' href="#">menu</a>
+                    <a onclick='closeNav()' href="#">review</a>
+                    <a onclick='closeNav()' href="#">order</a>
+                    
+                </div>
+
             </div>
         </div>
-        
-            
-
-       
-    
-    </div>
-</div>
+    </header>
     <!-- nav-section end -->
 
     <!-- --header section start------- -->

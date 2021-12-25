@@ -22,10 +22,11 @@ global section
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
+    font-size: 62.5%;
 }
 body{
     font-family: 'Poppins', sans-serif;
-    font-size: 62.5%;
+    
     line-height: 1.5;
     -webkit-tap-highlight-color: transparent;
     color: var(--white-light);
@@ -60,13 +61,15 @@ ul li{
     text-transform: capitalize;
     background-color: var(--text-blue);
     color: var(--white);
-    padding: .3rem 1.5rem;
+    padding: 1rem 2rem;
     transition: all .4s linear;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
 }
 .btn-implement:hover{
     color: var(--white);
     background-color: var(--text-green);
-    padding: .3rem 1.9rem;
+    padding: 1rem 2.8rem;
     
 }
 .sec-padding{
@@ -74,7 +77,7 @@ ul li{
 }
 h1{
     color: var(--text-blue);
-    font-size: 4.3rem;
+    font-size: 5rem;
     font-weight: 500;
     opacity: .9;
     margin: 0;
@@ -83,13 +86,13 @@ h1{
 }
 h4{
     color: var(--text-green);
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     text-transform: capitalize;
     font-weight: 300;
 }
 h3{
     color: var(--text-blue);
-    font-size: 1.8rem;
+    font-size: 2.8rem;
 }
 
 /* section-title */
@@ -101,7 +104,7 @@ h3{
     margin-bottom: 6rem;
 }
 .section-title h2{
-    font-size: 2.4rem;
+    font-size: 3.6rem;
     text-transform: uppercase;
     text-align: center;
     color: var(--text-blue);
@@ -109,7 +112,7 @@ h3{
 .section-title h2::before{
     content: attr(data-title);
     display: block;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: var(--text-green);
     font-family: var(--cursive-font);
     font-weight: 400;
@@ -137,87 +140,124 @@ h3{
 /* ---------
 nav-section start
 ----------- */
-.nav-section{
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1%;
-    z-index: 111;
-     
-    /* margin: auto;
-    width: 88%;
-    max-width: 144.7rem; */ 
-
-}
-.na{
-    z-index: 11111;
-}
-.na.navbar-shrink{
+/* ------header-------- */
+header.navbar-shrink{
     box-shadow: 0 10px 10px rgba(0,0,0,.1);
-    background-color: var(--white);
-    padding-top: 5px;
+    background-color: var(--main-color);
+    padding: 10px 0;
+    
 }
-.nav-section a{
-    font-size: 1.1rem;
+header{
+    z-index: 1000;
+    /* box-shadow: var(--box-shadow); */
+}
+header .nav-class{
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; */
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+header .logo{
+    color: var(--text-blue);
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-decoration: none;
+}
+header .logo i{
+    color: var(--text-green);
+}
+header .nav-bar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
     color: var(--text-blue);
     text-decoration: none;
 }
-.search i{
-    font-size: 1.3rem;
-    width: 3rem;
-    height: 3rem;
+header .nav-bar a.active,
+header .nav-bar a:hover{
+    color: var(--white);
+    background: var(--text-green);
+
+}
+.icons a,
+.icons i{
+    font-size: 1.5rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     background-color: var(--grey);
-    line-height: 3rem;
+    line-height: 4rem;
     text-align: center;
     margin-right: .4rem;
     box-shadow: var(--box-shadow);
     transition: all .4s linear;
     cursor: pointer;
+    text-decoration: none;
+    color: var(--text-blue);
 }
-.search i:last-child{
+.icons a:last-child{
     margin-right: 0;
 }
-.search i:hover{
+.icons a:hover,
+.icons i:hover{
     background-color: var(--text-green);
     color: var(--white);
     transform: rotate(360deg);
 
 }
 
-.search i#menu-bars{
+.icons i#menu-bars{
     display: none;
 }
 
-.nav-section .logo{
-    font-size: 1.6rem;
-    font-weight: 500;
+/* ---------mobile menu------- */
+.mobile-menu{
+    display: block;
 }
-.logo i{
-    color: var(--text-green);
+
+.overlay{
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .9);
+    z-index: 9999;
+    overflow-x: hidden;
+    transition: .5s;
 }
-.nav-bar ul li{
-    padding: .3rem .4rem;
-    transition:all .4s linear;
-    margin-right: .3rem;
-   
+.overlay .overlay-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+}
+.overlay-content a{
+    display: block;
+    color: #9999;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .3rem;
+    padding: 1.8rem 0;
+    font-weight: 400;
 
 }
-.nav-bar ul li.active{
-    background-color: var(--text-green);
-    border-radius: .3rem;
+.overlay-content a:hover{
+    color: #fff;
 }
-.nav-bar ul li.active a{
-    color: white;
-}
-.nav-bar ul li:hover{
-    background-color: var(--text-green);
-    border-radius: .3rem;
-    
-}
-.nav-bar ul li:hover a{
-    color: white;
+.overlay .close-btn{
+    font-size: 5rem;
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    text-decoration: none;
+    color: #999999;
 }
 
 
@@ -225,7 +265,7 @@ nav-section start
 header-section start
 --------------- */
 .header-text p{
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     color: #666666;
     margin-top: 2rem;
     margin-bottom: 1.5rem;
@@ -270,11 +310,11 @@ dishes section start
 .dishes-item .fa-heart,
 .dishes-item .fa-eye{
     position: absolute;
-    height: 3rem;
-    width: 3rem;
+    height: 4rem;
+    width: 4rem;
     border-radius: 50%;
-    line-height: 3rem;
-    font-size: 1.5rem;
+    line-height: 4rem;
+    font-size: 2rem;
     top: 1.5rem;
     background-color: var(--grey);
     color: var(--text-blue);
@@ -300,12 +340,12 @@ dishes section start
 
 .dishes-item:hover .fa-heart{
     opacity: 1;
-    right: 1.5rem;
+    right: 3.4rem;
     
 }
 .dishes-item:hover .fa-eye{
     opacity: 1;
-    left: 1.5rem;
+    left: 3.4rem;
     
 }
 
@@ -316,16 +356,16 @@ Choose section start
     width: 98%;
     margin: auto;
     height: auto;
-    animation: spin_01 8s linear infinite;
+    /* animation: spin_01 8s linear infinite; */
 
 }
 .choose-text-sec h2{
     color: var(--text-blue);
-    font-size: 2.5rem;
+    font-size: 2.6rem;
 }
 .choose-text-sec p{
     color:#666666;
-    font-size: 1rem;
+    font-size: 1.4rem;
     line-height: 2rem;
 }
 .icon-container{
@@ -347,7 +387,7 @@ Choose section start
 .icon-container .about-btn span{
     color: var(--text-blue);
     font-weight: 300;
-    font-size: .8rem;
+    font-size: 1.2rem;
 }
 .choose-text-sec .btn-implement{
     margin-top: 1rem;
@@ -378,38 +418,40 @@ Choose section start
     html{
         font-size: 55%;
     }
+    header{
+        padding: 1rem 2rem;
+    }
 }
-@media(max-width:768px){
-    .search i#menu-bars{
+@media(max-width:900px){
+    header .icons #menu-bars{
         display: inline-block;
     }
-    .nav-section{
-        position: relative;
-    }
-    .nav-section .nav-bar{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: var(--white);
-        border-top: .1rem solid rgba(0,0,0,.2);
-        border-bottom: .1rem solid rgba(0,0,0,.2);
-        padding: 1rem;
-        
+    header .nav-bar{
         display: none;
-
     }
-    
-    .nav-bar ul li{
-        display: block;
-        padding: 1.5rem;
-        margin: 1rem;
+   
+}
+@media(max-width:768px){
+    .header-text{
+        margin-bottom: 7rem;
+    }
+    .owl-carousel .owl-item img{
+        width: 90%;
+    }
+    .choose-section .choose-text-sec{
         
-        background: #eee;
+        text-align: center;
     }
-    .nav-bar ul li a{
-        font-size: 2rem;
+    .choose-section .choose-text-sec .icon-container{
+        justify-content: center;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
     }
-    
-    
+}
+
+@media(max-width:568px){
+    html{
+        font-size: 50%;
+    }
+   
 }
