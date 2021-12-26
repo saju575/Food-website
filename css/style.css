@@ -281,7 +281,14 @@ dishes section start
 .dishes-section{
     background-color: var(--grey);
 }
+.dishes-section .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
+    gap: 1.5rem;
+}
 .dishes-item{
+    padding: 2.5rem;
+    background-color: var(--white);
     text-align: center; 
     margin-bottom: 2.5rem;
     position: relative;
@@ -295,13 +302,13 @@ dishes section start
 .dishes-item .rating{
     margin-bottom: 1rem;
 }
-.dishes-item .rating i{
+.dishes-item .stars i{
     color: var(--text-green);
-    font-size: 1.2rem;
+    font-size: 1.8rem;
 }
 .dishes-item span{
     color: var(--text-green);
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-weight: 500;
     margin-bottom: 1rem;
     display: block;
@@ -329,11 +336,11 @@ dishes section start
     transform: rotate(360deg);
 }
 .dishes-item .fa-eye{
-    left: -1rem;
+    left: 0rem;
     
 }
 .dishes-item .fa-heart{
-    right: -1rem;
+    right: 0rem;
     
 }
 

@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="css/font-awesome.css">
     <!-- -------link bootstrap css--------- -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <!-- Link Swiper's CSS -->
-     
+     <!-- grid CSS -->
+     <link rel="stylesheet" href="css/grid.css">
     <!-- ---------link local css---------- -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -106,127 +106,123 @@
     <!-- header section end -->
 
     <!-- -------dishes section start----------  -->
-    <!-- <section class="dishes-section sec-padding" data-scroll-index="1">
+    <section class="dishes-section sec-padding">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="section-title">
                     <h2 data-title="our dishes">popular dishes</h2>
                 </div>
             </div>
-            <div class="row justify-content-center mt-1">
-                <div class="col-lg-4 col-md-6 dishes-item">
-                    <div class="p-card bg-white p-2 rounded px-3">
-                        <a href="#"><i class="fas fa-heart"></i></a>
-                        <a href="#"><i class="fas fa-eye"></i></a>
-                        <img src="images/dish1.png" alt="dish 1">
-                        <h3>Tasty Food</h3>
-                        <div class="rating">
+            <!-- <div class="row"> -->
+                <div class="box-container">
+                <div class="dishes-item">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                    <img src="images/dish1.png" alt="dish 1">
+                    <h3>tasty food</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        
 
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <span><i class="fas fa-dollar-sign"></i>15.19</span>
-                        <a href="#" class="btn btn-implement">add to card</a>
                     </div>
+                    <span>$15.99</span>
+                    <a href="#" class="btn btn-implement">add to card</a>
                 </div>
-                <div class="col-lg-4 col-md-6 dishes-item">
-                    <div class="p-card bg-white p-2 rounded px-3">
-                        <a href="#"><i class="fas fa-heart"></i></a>
-                        <a href="#"><i class="fas fa-eye"></i></a>
-                        <img src="images/dish2.png" alt="dish 1">
-                        <h3>Tasty Food</h3>
-                        <div class="rating">
+            
+            <div class="dishes-item">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dish2.png" alt="dish 2">
+                <h3>tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    
 
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <span><i class="fas fa-dollar-sign"></i>15.19</span>
-                        <a href="#" class="btn btn-implement">add to card</a>
-                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 dishes-item">
-                    <div class="p-card bg-white p-2 rounded px-3">
-                        <a href="#"><i class="fas fa-heart"></i></a>
-                        <a href="#"><i class="fas fa-eye"></i></a>
-                        <img src="images/dish3.png" alt="dish 3">
-                        <h3>Tasty Food</h3>
-                        <div class="rating">
-
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <span><i class="fas fa-dollar-sign"></i>15.19</span>
-                        <a href="#" class="btn btn-implement">add to card</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 dishes-item">
-                    <div class="p-card bg-white p-2 rounded px-3">
-                        <a href="#"><i class="fas fa-heart"></i></a>
-                        <a href="#"><i class="fas fa-eye"></i></a>
-                        <img src="images/dish4.png" alt="dish 1">
-                        <h3>Tasty Food</h3>
-                        <div class="rating">
-
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <span><i class="fas fa-dollar-sign"></i>15.19</span>
-                        <a href="#" class="btn btn-implement">add to card</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 dishes-item">
-                    <div class="p-card bg-white p-2 rounded px-3">
-                        <a href="#"><i class="fas fa-heart"></i></a>
-                        <a href="#"><i class="fas fa-eye"></i></a>
-                        <img src="images/dish5.png" alt="dish 1">
-                        <h3>Tasty Food</h3>
-                        <div class="rating">
-
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <span><i class="fas fa-dollar-sign"></i>15.19</span>
-                        <a href="#" class="btn btn-implement">add to card</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 dishes-item">
-                    <div class="p-card bg-white p-2 rounded px-3">
-                        <a href="#"><i class="fas fa-heart"></i></a>
-                        <a href="#"><i class="fas fa-eye"></i></a>
-                        <img src="images/dish6.png" alt="dish 1">
-                        <h3>Tasty Food</h3>
-                        <div class="rating">
-
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <span><i class="fas fa-dollar-sign"></i>15.19</span>
-                        <a href="#" class="btn btn-implement">add to card</a>
-                    </div>
-                </div>
-               
+                <span>$15.99</span>
+                <a href="#" class="btn btn-implement">add to card</a>
             </div>
+            <div class="dishes-item">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dish3.png" alt="dish 3">
+                <h3>tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    
+
+                </div>
+                <span>$15.99</span>
+                <a href="#" class="btn btn-implement">add to card</a>
+            </div>
+            <div class="dishes-item">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dish4.png" alt="dish 4">
+                <h3>tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    
+
+                </div>
+                <span>$15.99</span>
+                <a href="#" class="btn btn-implement">add to card</a>
+            </div>
+            <div class="dishes-item">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dish5.png" alt="dish 5">
+                <h3>tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    
+
+                </div>
+                <span>$15.99</span>
+                <a href="#" class="btn btn-implement">add to card</a>
+            </div>
+            <div class="dishes-item">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dish6.png" alt="dish 6">
+                <h3>tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    
+
+                </div>
+                <span>$15.99</span>
+                <a href="#" class="btn btn-implement">add to card</a>
+            </div>
+            
         </div>
-    </section>  -->
-     <!-- -------dishes section end---------- - -->
+        </div>
+    </section>
+    <!-- -------dishes section end---------- - -->
 
     <!---- -------Choose section start -->
     <section class="choose-section sec-padding" data-scroll-index="2">
