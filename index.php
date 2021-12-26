@@ -106,7 +106,7 @@
     <!-- header section end -->
 
     <!-- -------dishes section start----------  -->
-    <section class="dishes-section sec-padding" data-scroll-index="1">
+    <!-- <section class="dishes-section sec-padding" data-scroll-index="1">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="section-title">
@@ -225,10 +225,10 @@
                
             </div>
         </div>
-    </section>
-    <!-- -------dishes section end----------  -->
+    </section>  -->
+     <!-- -------dishes section end---------- - -->
 
-    <!-- -------Choose section start -->
+    <!---- -------Choose section start -->
     <section class="choose-section sec-padding" data-scroll-index="2">
         <div class="container">
             <div class="row justify-content-center">
