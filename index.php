@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- ------nav section start-------- -->
     <header>
         <div class="nav-class">
         <a href="#" class="logo"><i class="fas fa-utensils"></i>Resto.</a>
@@ -31,9 +32,10 @@
         </nav>
         <div class="icons">
             <i class="fas fa-bars" onclick="openNav()" id="menu-bars"></i>
-            <i class="fas fa-search"></i>
+            <i class="fas fa-search" onclick='openSearch()'></i>
             <a href="#" class="fas fa-heart"></a>
             <a href="#" class="fas fa-shopping-cart"></a>
+
             
         </div>
         </div>
@@ -42,12 +44,12 @@
             <div id="mynav" class="overlay">
                 <a class='close-btn' onclick='closeNav()' href="javascript:void(0)">&times;</a>
                 <div class="overlay-content">
-                    <a onclick='closeNav()' href="#">home</a>
-                    <a onclick='closeNav()' href="#">dishes</a>
-                    <a onclick='closeNav()' href="#">about</a>
-                    <a onclick='closeNav()' href="#">menu</a>
-                    <a onclick='closeNav()' href="#">review</a>
-                    <a onclick='closeNav()' href="#">order</a>
+                    <a onclick='closeNav()' href="#home">home</a>
+                    <a onclick='closeNav()' href="#dishes">dishes</a>
+                    <a onclick='closeNav()' href="#about">about</a>
+                    <a onclick='closeNav()' href="#menu">menu</a>
+                    <a onclick='closeNav()' href="#review">review</a>
+                    <a onclick='closeNav()' href="#order">order</a>
                     
                 </div>
 
@@ -57,11 +59,11 @@
     <!-- nav-section end -->
 
     <!-- --header section start------- -->
-    <header class="header-section sec-padding" data-scroll-index="0">
+    <header class="header-section sec-padding" data-scroll-index="0" id="home">
         <div class="container">
             <div class="row col-lg-12">
                 <div class="owl-carousel features-carousel">
-                    <div class="row align-items-center swiper-slide">
+                    <div class="row align-items-center">
                         <div class="col-md-6 col-lg-6 header-text">
                             <h4>our special dish</h4>
                             <h1>Spicy noodles</h1>
@@ -73,7 +75,7 @@
                             <img src="images/home-img-1.png" alt="">
                         </div>
                     </div>
-                    <div class="row align-items-center swiper-slide">
+                    <div class="row align-items-center">
                         <div class="col-md-6 col-lg-6 header-text">
                             <h4>our special dish</h4>
                             <h1>fried chicken</h1>
@@ -85,7 +87,7 @@
                             <img src="images/home-img-2.png" alt="">
                         </div>
                     </div>
-                    <div class="row align-items-center swiper-slide">
+                    <div class="row align-items-center">
                         <div class="col-md-6 col-lg-6 header-text">
                             <h4>our special dish</h4>
                             <h1>hot pizza</h1>
@@ -105,7 +107,7 @@
     <!-- header section end -->
 
     <!-- -------dishes section start----------  -->
-    <section class="dishes-section sec-padding">
+    <section class="dishes-section sec-padding" id="dishes">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="section-title">
@@ -224,7 +226,7 @@
     <!-- -------dishes section end---------- - -->
 
     <!---- -------Choose section start -->
-    <section class="choose-section sec-padding" data-scroll-index="2">
+    <section class="choose-section sec-padding" data-scroll-index="2" id="about">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="section-title">
@@ -262,7 +264,7 @@
     <!-- -------Choose section end -->
 
      <!-- -------menu section start-----  -->
-    <section class="menu-section sec-padding">
+    <section class="menu-section sec-padding" id="menu">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="section-title">
@@ -383,7 +385,222 @@
     </section>
      <!-- ---------menu section end------  -->
 
+     <!-- -------customar section start-------- -->
+    <section class="customar-section sec-padding" id="review">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="section-title">
+                    <h2 data-title="Customar's Review">what they say</h2>
+                </div>
+            </div>
+            <div class="row">
 
+                <div class="owl-carousel customar-carousel">
+                    <div class="customar-item">
+                        <i class="fas fa-quote-right"></i>
+                        <div class="user">
+                            
+                                <img src="images/pic-1.png" alt="person 1">
+                            
+                            <div class="user-info">
+                                <h3>Joe den</h3>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto illo, accusantium unde quis voluptas deleniti! Suscipit fugiat consequatur harum maxime. Nostrum temporibus optio illum unde eum maxime, quia ab soluta.</p>
+                    </div>
+                    <div class="customar-item">
+                        <i class="fas fa-quote-right"></i>
+                        <div class="user">
+                            <img src="images/pic-2.png" alt="person 2">
+                            <div class="user-info">
+                                <h3>annana hayat</h3>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto illo, accusantium unde quis voluptas deleniti! Suscipit fugiat consequatur harum maxime. Nostrum temporibus optio illum unde eum maxime, quia ab soluta.</p>
+                    </div>
+                    <div class="customar-item">
+                        <i class="fas fa-quote-right"></i>
+                        <div class="user">
+                            <img src="images/pic-3.png" alt="person 3">
+                            <div class="user-info">
+                                <h3>jeme roy</h3>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto illo, accusantium unde quis voluptas deleniti! Suscipit fugiat consequatur harum maxime. Nostrum temporibus optio illum unde eum maxime, quia ab soluta.</p>
+                    </div>
+                    <div class="customar-item">
+                        <i class="fas fa-quote-right"></i>
+                        <div class="user">
+                            <img src="images/pic-4.png" alt="person 4">
+                            <div class="user-info">
+                                <h3>mimi</h3>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto illo, accusantium unde quis voluptas deleniti! Suscipit fugiat consequatur harum maxime. Nostrum temporibus optio illum unde eum maxime, quia ab soluta.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- ---------customar section end-------- -->
+
+    <!-- ----order section start------- -->
+    <section class="order-section sec-padding" id="order">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-title="order now">free and fast</h2>
+            </div>
+            <div class="form-section">
+                <form action="">
+                    <div class="row">
+                        <div class="col">
+                            <label for="name">Your name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
+                        </div>
+                        <div class="col">
+                            <label for="m-numb">Your mobile number</label>
+                            <input type="text" class="form-control" placeholder="Enter password" name="m-numb">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="order">Your order</label>
+                            <input type="text" class="form-control" id="order" placeholder="Enter food name" name="order">
+                        </div>
+                        <div class="col">
+                            <label for="ex-food">additional food</label>
+                            <input type="text" class="form-control" placeholder="extra with food" name="ex-food">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="num-order">how much</label>
+                            <input type="number" class="form-control" id="num-order" placeholder="how many order" name="num-order">
+                        </div>
+                        <div class="col">
+                            <label for="date">date and time</label>
+                            <input type="datetime-local" class="form-control" placeholder="dd---yyyy --:-- --" name="date">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="address">your address</label>
+                            <textarea name="address" id="address" class="form-control" placeholder="enter your address"></textarea>
+                        </div>
+                        <div class="col">
+                            <label for="message">your message</label>
+                            <textarea name="message" id="message" class="form-control" placeholder="enter your message"></textarea>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-implement" style="margin-top: 2rem;">order now</a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------footer section start------- -->
+    <footer class="footer-section sec-padding">
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-3 col-md-6 footer-item location">
+                <h3>location</h3>
+                <ul>
+                    <li>India</li>
+                    <li>Japan</li>
+                    <li>Russia</li>
+                    <li>USA</li>
+                    <li>France</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-item abc">
+                <h3>quick links</h3>
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#dishes">dishes</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">menu</a></li>
+                    <li><a href="#reivew">reivew</a></li>
+                    <li><a href="#order">order</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-item">
+                <h3>contact info</h3>
+                <ul>
+                    <li>+123-456-7890</li>
+                    <li>+111-222-6666</li>
+                    <li>ssaju178@gmail.com</li>
+                    <li>anasbhai@gmail.com</li>
+                    <li>Mumbai, india - 400104</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-item abc">
+                <h3>follow us</h3>
+                <ul>
+                    <li><a href="#">facebook</a></li>
+                    <li><a href="#">twitter</a></li>
+                    <li><a href="#">Instragram</a></li>
+                    <li><a href="#">Linkedin</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="copywrite-text">Copyright @ 2021 By <span> Mr. Web Designer</span></p>
+            </div>
+        </div>
+    </div>
+    </footer>
+    <!-- footer section end -->
+
+    <!-- ------loader part------- -->
+    <div class="loader-container">
+        <img src="images/loader.gif" alt="loader">
+    </div>
+
+    <div class="search-section">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search here..." name="search">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+        <a class='close-btn' onclick="closeSearch()" href="javascript:void(0)">&times;</a>
+
+    </div>
+
+    
+    
+    <!-- order section end----- -->
     <!-- ------link jequery----- -->
     <script src="js/jaquery.min.js"></script>
     <!-- -----------link bootstrap js--------- -->
