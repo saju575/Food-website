@@ -17,18 +17,18 @@
 </head>
 <body>
     <!-- ------nav section start-------- -->
-    <header class="navbar-section">
+    <header class="navbar-section fixed-top">
         <div class="container">
-        <div class="nav-class">
+        <div class=" row nav-class">
         <a href="#" class="logo"><i class="fas fa-utensils"></i>Resto.</a>
         <nav class="nav-bar">
             
-                <a class=".nav-item active" href="#" data-scroll-nav="0">home</a>
-                <a href="#" class=".nav-item" data-scroll-nav="1">dishes</a>
-                <a class=".nav-item" href="#" data-scroll-nav="2">about</a>
-                <a class=".nav-item" href="#" data-scroll-nav="3">menu</a>
-                <a class=".nav-item" href="#" data-scroll-nav="4">review</a>
-                <a class=".nav-item" href="#" data-scroll-nav="5">order</a>
+                <a class="nav-item active" href="#" data-scroll-nav="0">home</a>
+                <a href="#" class="nav-item" data-scroll-nav="1">dishes</a>
+                <a class="nav-item" href="#" data-scroll-nav="2">about</a>
+                <a class="nav-item" href="#" data-scroll-nav="3">menu</a>
+                <a class="nav-item" href="#" data-scroll-nav="4">review</a>
+                <a class="nav-item" href="#" data-scroll-nav="5">order</a>
             </ul>
         </nav>
         <div class="icons">

@@ -190,10 +190,7 @@ header .nav-bar a:hover{
 .navbar-section.navbar-shrink{
     box-shadow: 0 10px 10px rgba(0,0,0,.1);
     background-color: var(--grey);
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
+    
     padding: 1rem 0;
 }
 .icons a,
@@ -673,7 +670,7 @@ footer section start
     } */
     header .header-img img{
         width: 90%;
-        float: left;
+        
     }
     .choose-section .choose-text-sec{
         
