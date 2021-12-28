@@ -17,7 +17,7 @@
 </head>
 <body>
     <!-- ------nav section start-------- -->
-    <header class="navbar-section fixed-top">
+    <!-- <header class="navbar-section fixed-top">
         <div class="container">
         <div class=" row nav-class">
         <a href="#" class="logo"><i class="fas fa-utensils"></i>Resto.</a>
@@ -57,11 +57,67 @@
             </div>
         </div>
         </div>
-    </header>
+    </header> -->
     <!-- nav-section end -->
 
+
+    
+<nav class="navbar navbar-expand-sm fixed-top">
+    <div class="container">
+         <!-- Brand/logo -->
+        <a href="index.html" class="navbar-brand"><i class="fas fa-utensils"></i>Resto.</a>
+    
+    <!-- Links -->
+         <!-- <ul class="navbar-nav m-auto nav-modifi">
+            <li class="nav-item active">
+            <a class="nav-link" href="#" data-scroll-nav="0">home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#" data-scroll-nav="1">dishes</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#" data-scroll-nav="2">about</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-scroll-nav="3">menu</a>
+             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-scroll-nav="4">review</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-scroll-nav="5">order</a>
+            </li>
+        </ul>  -->
+        <div class="icons">
+            <i class="fas fa-bars" onclick="openNav()" id="menu-bars"></i>
+            <i class="fas fa-search" onclick="openSearch()" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+        </div>
+    </div>
+    
+ 
+</nav>
+
+<div class="mobile-menu">
+            
+    <div id="mynav" class="overlay">
+        <a class='close-btn' onclick='closeNav()' href="javascript:void(0)">&times;</a>
+        <div class="overlay-content">
+            <a onclick='closeNav()' href="#home">home</a>
+            <a onclick='closeNav()' href="#dishes">dishes</a>
+            <a onclick='closeNav()' href="#about">about</a>
+            <a onclick='closeNav()' href="#menu">menu</a>
+            <a onclick='closeNav()' href="#review">review</a>
+            <a onclick='closeNav()' href="#order">order</a>
+            
+        </div>
+    </div>
+</div>
+
+
     <!-- --header section start------- -->
-    <section class="header-section sec-padding" data-scroll-index="0" id="home">
+     <section class="header-section sec-padding" data-scroll-index="0" id="home"> 
         <div class="container">
             <div class="row col-lg-12">
                 <div class="owl-carousel features-carousel">
@@ -104,7 +160,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
 
     <!-- header section end -->
 

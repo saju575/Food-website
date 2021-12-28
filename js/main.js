@@ -1,14 +1,23 @@
  $(document).ready(function () {
 
       // ------------nav bar shrink---------
-    $(window).on("scroll",function(){
-        if($(this).scrollTop()>80){
-            $(".navbar-section").addClass("navbar-shrink");
-        }
-        else{
-            $(".navbar-section").removeClass("navbar-shrink");
-        }
-    })
+    // $(window).on("scroll",function(){
+    //     if($(this).scrollTop()>80){
+    //         $(".navbar-section").addClass("navbar-shrink");
+    //     }
+    //     else{
+    //         $(".navbar-section").removeClass("navbar-shrink");
+    //     }
+    // })
+
+    // $(window).on("scroll",function(){
+    //     if($(this).scrollTop()>80){
+    //         $("nav").addClass("navbar-shrink");
+    //     }
+    //     else{
+    //         $("nav").removeClass("navbar-shrink");
+    //     }
+    // })
 
      //---------head-carousel---------
      $('.features-carousel').owlCarousel({
