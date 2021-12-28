@@ -377,7 +377,7 @@ Choose section start
     width: 98%;
     margin: auto;
     height: auto;
-    /* animation: spin_01 8s linear infinite; */
+    animation: spin_01 8s linear infinite;
 
 }
 .choose-text-sec h2{
