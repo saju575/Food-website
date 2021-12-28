@@ -17,17 +17,18 @@
 </head>
 <body>
     <!-- ------nav section start-------- -->
-    <header>
+    <header class="navbar-section">
+        <div class="container">
         <div class="nav-class">
         <a href="#" class="logo"><i class="fas fa-utensils"></i>Resto.</a>
         <nav class="nav-bar">
             
-                <a class=".nav-item active" href="#">home</a>
-                <a href="#" class=".nav-item" data-scroll-nav="0">dishes</a>
-                <a class=".nav-item" href="#" data-scroll-nav="1">about</a>
-                <a class=".nav-item" href="#" data-scroll-nav="2">menu</a>
-                <a class=".nav-item" href="#" data-scroll-nav="3">review</a>
-                <a class=".nav-item" href="#" data-scroll-nav="4">order</a>
+                <a class=".nav-item active" href="#" data-scroll-nav="0">home</a>
+                <a href="#" class=".nav-item" data-scroll-nav="1">dishes</a>
+                <a class=".nav-item" href="#" data-scroll-nav="2">about</a>
+                <a class=".nav-item" href="#" data-scroll-nav="3">menu</a>
+                <a class=".nav-item" href="#" data-scroll-nav="4">review</a>
+                <a class=".nav-item" href="#" data-scroll-nav="5">order</a>
             </ul>
         </nav>
         <div class="icons">
@@ -55,11 +56,12 @@
 
             </div>
         </div>
+        </div>
     </header>
     <!-- nav-section end -->
 
     <!-- --header section start------- -->
-    <header class="header-section sec-padding" data-scroll-index="0" id="home">
+    <section class="header-section sec-padding" data-scroll-index="0" id="home">
         <div class="container">
             <div class="row col-lg-12">
                 <div class="owl-carousel features-carousel">
@@ -102,12 +104,12 @@
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
     <!-- header section end -->
 
     <!-- -------dishes section start----------  -->
-    <section class="dishes-section sec-padding" id="dishes">
+    <section class="dishes-section sec-padding" id="dishes" data-scroll-index="1">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="section-title">
@@ -264,7 +266,7 @@
     <!-- -------Choose section end -->
 
      <!-- -------menu section start-----  -->
-    <section class="menu-section sec-padding" id="menu">
+    <section class="menu-section sec-padding" id="menu" data-scroll-index="3">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="section-title">
@@ -386,7 +388,7 @@
      <!-- ---------menu section end------  -->
 
      <!-- -------customar section start-------- -->
-    <section class="customar-section sec-padding" id="review">
+    <section class="customar-section sec-padding" id="review" data-scroll-index="4">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="section-title">
@@ -473,7 +475,7 @@
      <!-- ---------customar section end-------- -->
 
     <!-- ----order section start------- -->
-    <section class="order-section sec-padding" id="order">
+    <section class="order-section sec-padding" id="order" data-scroll-index="5">
         <div class="container">
             <div class="section-title">
                 <h2 data-title="order now">free and fast</h2>
@@ -605,6 +607,7 @@
     <script src="js/jaquery.min.js"></script>
     <!-- -----------link bootstrap js--------- -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrollIt.min.js"></script>
     <!-- --link owel--- -->
     <script src="js/owl.carousel.min.js"></script>
     <!-- ---------link local js --------- -->

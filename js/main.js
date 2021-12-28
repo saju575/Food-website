@@ -3,10 +3,10 @@
       // ------------nav bar shrink---------
     $(window).on("scroll",function(){
         if($(this).scrollTop()>80){
-            $("header").addClass("navbar-shrink");
+            $(".navbar-section").addClass("navbar-shrink");
         }
         else{
-            $("header").removeClass("navbar-shrink");
+            $(".navbar-section").removeClass("navbar-shrink");
         }
     })
 
@@ -55,8 +55,10 @@
     
     // -------------page Scrolling------------
     $.scrollIt({
-        topOffset:-50
-    })
+        
+      
+        topOffset: -60           // 
+      });
 
  });
 
