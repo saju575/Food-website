@@ -30,6 +30,7 @@ body{
     line-height: 1.5;
     -webkit-tap-highlight-color: transparent;
     color: var(--white-light);
+    overflow-x: hidden;
 }
 /* ------variable section------- */
 
@@ -151,7 +152,7 @@ nav-section start
     z-index: 1000;
     padding: 1rem 0;
     /* box-shadow: var(--box-shadow); */
-}
+
 /* header .nav-class{
    
     display: flex;
@@ -275,7 +276,7 @@ nav{
 /* -----navbar---- */
 nav.navbar-shrink{
     box-shadow: 0 10px 10px rgba(0,0,0,.1);
-    background-color: var(--white);
+    background-color: rgba(233, 224, 224, 0.89);
     z-index: 111111111;
     padding-top: .5rem;
     padding-bottom: .5rem;
