@@ -68,7 +68,7 @@
         <a href="index.html" class="navbar-brand"><i class="fas fa-utensils"></i>Resto.</a>
     
     <!-- Links -->
-         <!-- <ul class="navbar-nav m-auto nav-modifi">
+          <ul class="navbar-nav m-auto nav-modifi">
             <li class="nav-item active">
             <a class="nav-link" href="#" data-scroll-nav="0">home</a>
             </li>
@@ -87,7 +87,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="#" data-scroll-nav="5">order</a>
             </li>
-        </ul>  -->
+        </ul> 
         <div class="icons">
             <i class="fas fa-bars" onclick="openNav()" id="menu-bars"></i>
             <i class="fas fa-search" onclick="openSearch()" id="search-icon"></i>
