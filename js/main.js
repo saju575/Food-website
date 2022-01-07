@@ -64,10 +64,8 @@
     
     // -------------page Scrolling------------
     $.scrollIt({
-        
-      
         topOffset: -60           // 
-      });
+    });
 
  });
 

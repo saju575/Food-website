@@ -142,85 +142,37 @@ h3{
 nav-section start
 ----------- */
 /* ------header-------- */
-/* header.navbar-shrink{
-    box-shadow: 0 10px 10px rgba(0,0,0,.1);
-    background-color: var(--main-color);
-    padding: 10px 0;
-    
-} */
-/* header{
-    z-index: 1000;
-    padding: 1rem 0;
-    /* box-shadow: var(--box-shadow); */
-
-/* header .nav-class{
-   
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-} */
-/* header .logo{
-    color: var(--text-blue);
-    font-size: 2.5rem;
-    font-weight: bolder;
-    text-decoration: none;
-} */
-/* header .logo i{
-    color: var(--text-green);
-}
-header .nav-bar a{
-    font-size: 1.7rem;
-    border-radius: .5rem;
-    padding: .5rem 1.5rem;
-    color: var(--text-blue);
-    text-decoration: none;
-}
-header .nav-bar a.active,
-header .nav-bar a:hover{
-    color: var(--white);
-    background: var(--text-green);
-
-} */
-
-/* -----navbar---- */
-/* .navbar-section.navbar-shrink{
-    box-shadow: 0 10px 10px rgba(0,0,0,.1);
-    background-color: var(--grey);
-    
-    padding: 1rem 0;
-} */
-/* .icons a,
-.icons i{
-    font-size: 1.5rem;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    background-color: var(--grey);
-    line-height: 4rem;
-    text-align: center;
-    margin-right: .4rem;
+.navbar-section{
+    background-color: #e74c3c;
     box-shadow: var(--box-shadow);
-    transition: all .4s linear;
-    cursor: pointer;
+}
+.nav-class{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav-class .nav-bar a{
+    padding: .5rem 1rem;
+    font-size: 1.6rem;
+    
     text-decoration: none;
     color: var(--text-blue);
+    margin-right: .3rem;
+    border-radius: .5rem;
 }
-.icons a:last-child{
-    margin-right: 0;
-}
-.icons a:hover,
-.icons i:hover{
+.nav-class .nav-bar a.active {
     background-color: var(--text-green);
     color: var(--white);
-    transform: rotate(360deg);
 
 }
-
-.icons i#menu-bars{
+.nav-class .nav-bar a:hover{
+    background-color: var(--text-green);
+    color: var(--grey);
+}
+/* #menu-bars{
     display: none;
 } */
-
 
 /* ------new add----- */
 
@@ -309,7 +261,7 @@ nav.navbar-shrink{
 }
 
 .icons i#menu-bars{
-    display: inline-block;
+    display: none;
 }
 
 /* ---------mobile menu------- */
@@ -361,6 +313,9 @@ nav.navbar-shrink{
 /* --------
 header-section start
 --------------- */
+.header-section{
+    padding-top: 12rem;
+}
 .header-text p{
     font-size: 1.8rem;
     color: #666666;
@@ -799,6 +754,12 @@ footer section start
         grid-template-columns: repeat(auto-fit,minmax(22rem,1fr));
         gap: 1.5rem;
     } */
+    .nav-class .nav-bar{
+        display: none;
+    }
+    .icons i#menu-bars {
+        display: inline-block;
+    }
     
 }
 
@@ -806,14 +767,7 @@ footer section start
     html{
         font-size: 50%;
     }
-    /* .dishes-item img{
-        width: 90%;
-    }
-    .menu-section .box-content{
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
-        gap: 1.5rem;
-    } */
+    
     
 }
 
